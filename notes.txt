@@ -1,0 +1,15 @@
+docker run --name postgres-db -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d postgres
+docker exec -it postgres-db psql -U postgres
+
+
+
+
+if you want to connect on the pg-admin
+then open it register new server type name databasse
+
+
+name = postgres-db
+Host: 0.0.0.0
+Port: 5432
+Password: postgres
+User: postgres (default)
