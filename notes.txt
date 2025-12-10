@@ -13,3 +13,43 @@ Host: 0.0.0.0
 Port: 5432
 Password: postgres
 User: postgres (default)
+
+
+
+
+
+
+
+
+....
+create database databasename
+drop database databasename
+\l
+list all database
+\c to databasename
+
+
+
+CREATE TABLE person (
+    id int,
+    name varchar(100),
+    city varchar(100)
+);
+
+\d person
+
+
+
+INSERT INTO person (id, name, city) VALUES
+(1, 'Alice Johnson', 'New York'),
+(2, 'Bob Smith', 'London'),
+(3, 'Charlie Davis', 'Toronto'),
+(4, 'Diana Prince', 'Paris'),
+(5, 'Evan Wright', 'Sydney');
+
+
+SELECT * FROM person WHERE name='Bob Smith';
+UPDATE person set city='lahore' WHERE Id=1;
+DELETE FROM person WHERE id =1;
+
+
